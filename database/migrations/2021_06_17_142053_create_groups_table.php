@@ -17,7 +17,7 @@ class CreateGroupsTable extends Migration
             $table->id('group_id');
             $table->string('name');
             $table->string('description', 255);
-            $table->unsignedBigInteger('privacy_id');
+            $table->unsignedBigInteger('privacy_level_id');
             $table->string('created_by');
             $table->string('updated_by');
             $table->timestamps();
